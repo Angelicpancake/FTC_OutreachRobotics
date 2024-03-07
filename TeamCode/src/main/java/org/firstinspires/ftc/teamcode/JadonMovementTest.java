@@ -15,7 +15,7 @@ public class JadonMovementTest extends OpMode {
 
     @Override
     public void init() {
-        backLeft = hardwareMap.get(DcMotor.class, "backLeft");
+        // backLeft = hardwareMap.get(DcMotor.class, "backLeft");
         backRight = hardwareMap.get(DcMotor.class, "backRight");
         frontLeft = hardwareMap.get(DcMotor.class, "frontLeft");
         frontRight = hardwareMap.get(DcMotor.class, "frontRight");
