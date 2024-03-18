@@ -50,6 +50,11 @@ public class FieldCentricMecanumTeleOp extends LinearOpMode {
             if (gamepad1.options) {
                 imu.resetYaw();
             }
+            if (gamepad1.x) {
+                parameters = new IMU.Parameters(new RevHubOrientationOnRobot(
+                        RevHubOrientationOnRobot.LogoFacingDirection.UP,
+                        RevHubOrientationOnRobot.UsbFacingDirection.FORWARD));
+            }
 
             double botHeading = imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
 
